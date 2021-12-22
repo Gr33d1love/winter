@@ -34,6 +34,42 @@
 Початок занять - 2 січня 2019 року. Тривалість занять - 3 тижні: 9 занять по 2 години в день. Місце проведення Зимової школи - мультимедыйні навчальні класи та комп'ютерні лабораторії Волинського коледжу НУХТ. Заняття проводяться в трьох секціях.</p>
 	</div>
 </section>
+	<!-- Галерея -->
+<div style="text-align:center">
+  <h2 style="color:white">ЗИМОВА ШКОЛА ПРОГРАМУВАННЯ</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img/ws1.png" alt="ws1" style="width:40%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/ws2.png" alt="ws2" style="width:40%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/ws3.png" alt="ws3" style="width:40%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/ws4.png" alt="ws4" style="width:40%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
 <!--опис-->
 <!--ментори-->
 <p class="megi">Ментори</p>
